@@ -1,34 +1,29 @@
 /*обнуление*/
-*,*:before,*:after{padding: 0;border: 0;margin: 0; box-sizing: border-box;}
+*,*:before,*:after,div{padding: 0;border: 0;margin: 0; box-sizing: border-box;}
 
+html,body{
+	overflow-x: hidden;
+}
 
+.first {
+	width:  100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .container {
 	max-width: 1180px;
 	display: flex;
 	flex-direction: column;
-}
-.first {
-	width:  100%;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	&::before{
-		top:0;
-		content: "";
-		position: absolute;
-		width:  100%;
-		height: 100%;
-		background-color: rgba(0,0,0,0.5);
-	};
 }
 .title {
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	position: relative;
-	z-index: 1;
-	margin: 20px;
+	z-index: 2;
+	margin:10px 40px;
 }
 .subtitle {
 	color: white;
@@ -36,8 +31,8 @@
 	font-weight: 400;
 	text-size: 400px;
 	position: relative;
-	z-index: 1;
-	margin: 20px;
+	z-index: 2;
+	margin:10px 40px ;
 	min-height: 70px;
 }
 //необычная кнопка
@@ -107,4 +102,32 @@
 		transform: translate3d(-50%,-96%,0) rotate(360deg) scale(1);
 	}
 }
+//parallax-background
+.mouse-parallax-bg {
+	
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s ease;
+    	&::before{
+		top:0;
+		content: "";
+		position: absolute;
+		width:  100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(0,0,0,0.5);};  
+}
+@media (min-width: 480px){
+.mouse-parallax-bg{
+	width:  120%;
+	height: 120%;
+	}
+}
 //далее
+.text{
+	position: relative;
+	width: 100%;
+	z-index:2;
+	background-color: white;
+}
