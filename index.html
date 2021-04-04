@@ -1,59 +1,23 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<link rel="stylesheet" href="css/mystyle.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
+---
+layout: default
+---
 
-	<title>Разработка сайтов</title>
-</head>
-<body>
-	<!--меню бургер-->
-	<div class="burger" style="display: none;">
-		
-	</div>
-	<!--сама страница-->
-	<div class="first" >
-		<div class="mouse-parallax-bg" style="background: url('img/0sPaBKBrbchL3R1eKj5H_pNSGdDJHnZqypf0jgun15I.jpeg') center/cover no-repeat"   ></div>
-		<div class="container">
-			<h1 class="title">
-				Здравствуйте это мой тестовый сайт
-			</h1>
-			<h2 class="subtitle">
-				<!--далее typed js-->
-				<p>На сайте используется  <span class="typed">
-					<div id="typed-strings">
-						<p>typed.js</p>
-					  	<p>parallax.js</p>
-					 	<p>javascript</p>
-					 	<p>html</p>
-					 	<p>css</p>
-					 	<p>?</p>
-					</div>
-				</span></p>
-			</h2>
-			<!--необычная кнопка-->
-			<a href="#yak" class="wave-btn">
-				<span class="btn-text">Нажми</span>
-				<span class="btn-wave"></span>
-			</a>
-		</div>
-	</div>
-	<!-- -->
-	<a name="yak"></a>
-	<div class="text" >
-		<div class="container">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti excepturi temporibus sed animi architecto velit, atque odio, reprehenderit qui iusto labore neque enim tenetur sequi nostrum, ratione natus ab at.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti excepturi temporibus sed animi architecto velit, atque odio, reprehenderit qui iusto labore neque enim tenetur sequi nostrum, ratione natus ab at.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti excepturi temporibus sed animi architecto velit, atque odio, reprehenderit qui iusto labore neque enim tenetur sequi nostrum, ratione natus ab at.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti excepturi temporibus sed animi architecto velit, atque odio, reprehenderit qui iusto labore neque enim tenetur sequi nostrum, ratione natus ab at.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti excepturi temporibus sed animi architecto velit, atque odio, reprehenderit qui iusto labore neque enim tenetur sequi nostrum, ratione natus ab at.</p>
-		</div>
-	</div>
+<div class="home">
 
-</body>
-	
-	<script src="js/typed.min.js"></script>
-	<script src="js/my.js"></script>
-</html>
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
