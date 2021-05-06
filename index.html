@@ -4,76 +4,78 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Теплый дом</title>
+	
 	<link rel="stylesheet" href="/assets/css/default.css">
-	<link rel="shortcut icon" href="/assets/image/favicon.ico">
+	<link rel="shortcut icon" href="/assets/images/favicon.ico">
 </head>
 <body>
 	<header>
 	<div class="container">
-			<div class="header__wrapper">
-				<div class="header__logo">
-					<a href="#"><img src="/assets/images/logo.svg" alt="Тепый дом" style="max-width: 100%;">
+			<div class="header__contact-list">
+				<div class="header__item">
+					<a href="mailto:teplydom@mail.ru">
+						teplydom@mail.ru
 					</a>
 				</div>
-				<div class="header__left">
-					<div class="header__info">
-						<div class="header__zamer header__item">
-							<a href="" class="">Вызов 
-							<br> замерщика</a>
-						</div>
-						<div class="header__mail header__item">
-							<span>Почта для связи</span>
-							<a href="mailto:teplydom@mail.ru">teplydom@mail.ru</a>
-						</div>
-						<div class="header__phone header__item">
-							<a href="tel:+7 (978) 716-00-61">+7 (978) 716-00-61</a>
-						</div>
-						<div class="header__btn header__item">
-							Заказать звонок
-						</div>
-					</div>
-					<div class="header__burger">
-						<div class="header__burger-circle"></div>
-						<span></span>
-					</div>
-					<ul class="header__menu">
-						
-						<li>
-						<a href="/"  style="background-color: red"  class="header__link">
-      				Главная
-    					</a>
-    					</li>
-  						
-						<li>
-						<a href="/nashi-raboty.html"  class="header__link">
-      				Наши работы
-    					</a>
-    					</li>
-  						
-						<li>
-						<a href="/blog.html"  class="header__link">
-      				Блог
-    					</a>
-    					</li>
-  						
-						<li>
-						<a href="/about.html"  class="header__link">
-      				О нас
-    					</a>
-    					</li>
-  						
-						<li>
-						<a href="/katalog.html"  class="header__link">
-      				Каталог
-    					</a>
-    					</li>
-  						
-					</ul>
+				<div class="header__item">
+					<a href="tel:+7 (978) 716-00-61">
+						+7 (978) 716-00-61
+					</a>
+				</div>
+				<div class="header__item header__call" style="flex-grow: 1;align-self: flex-end;">
+					<a href="#popup">
+						Заказать звонок
+					</a>
 				</div>
 			</div>
+	</div>
+	<div class="header__body">
+		<div class="header__wrapper">
+			<div class="header__logo">
+				<a href="/#"><img src="/assets/images/logo.svg" alt="Тепый дом">
+				</a>
+			</div>
+			<nav class="header__menu">
+				<ul class="header__list">
+					
+					<li>
+						<a href="/" class="  current-page  header__link"> 
+						Главная
+						</a>
+					</li>
+					
+					<li>
+						<a href="/nashi-raboty.html" class="  header__link"> 
+						Наши работы
+						</a>
+					</li>
+					
+					<li>
+						<a href="/katalog.html" class="  header__link"> 
+						Каталог
+						</a>
+					</li>
+					
+					<li>
+						<a href="/blog.html" class="  header__link"> 
+						Блог
+						</a>
+					</li>
+					
+					<li>
+						<a href="/about.html" class="  header__link"> 
+						О нас
+						</a>
+					</li>
+					
+				</ul>
+			</nav>	
+		</div>		
+		<div class="header__burger">
+			<span></span>
 		</div>
-</header>	
-	
+	</div>
+</header>		
 	<div class="page">
 		<div class="intro">
 			<div class="container">
@@ -112,79 +114,88 @@
 			</div>
 		</div>
 	</div>
-<!------------------->
-	<div class="container">
-		<form class="forma" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe1onjCFJhUoUtpXSlAHCCgS_cqWpEbFmFN3zkvFn9i4qa49w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-			<p>Имя:</p>
-			<input type="text" name="entry.527690750" id="entry.527690750" placeholder="Введите ваше имя" class="name" required>
-			<p>Номер телефона: </p>
-			<input type="text" name="entry.843866252" id="entry.843866252" placeholder="+7()____-___-___" class="phone" required>
-			<div class="sended">Отправлено</div>
-			<input type="submit" value="Отправить" class="btn_submit">
-		</form>
-	</div>
 
-	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-	<footer>
-	<div class="container">
+	
+
+	<footer><!--style="background-color: #aaaa"-->
+	<div class="footer__image">
+		<div class="container">
 			<div class="footer__wrapper">
-				<div class="footer__kontakti">
-					<div class="footer__conteiner">
+				<div class="footer__contact">
+					<div class="sitemap footer__conteiner" >
+						<div class="footer__title">Карта сайта
+						</div>
+					</div>
+					<div class="footer__kontakti footer__conteiner">
 						<div class="footer__title">
 							Контакты
 						</div>
-						<p class="footer__kontakti_text">
-							г.Евпатория, ул. 9 мая, 47а, ТЦ "Максимум", 3 этаж, офис 20
-						</p>
-						<p class="footer__kontakti_text">
-							
-						</p>
+							<ul>
+								<li class="footer__kontakti_text">
+									г.Евпатория, ул. 9 мая, 47а, ТЦ "Максимум", 3 этаж, офис 20
+								</li>
+								<li class="footer__item">
+								<a href="mailto:teplydom@mail.ru">
+									teplydom@mail.ru
+								</a>
+								</li>
+								<li class="footer__item">
+									<a href="tel:+7 (978) 716-00-61">
+										+7 (978) 716-00-61
+									</a>
+								</li>
+							</ul>
 					</div>
-				</div>
-				<div class="footer__info">
-					<div class="footer__conteiner">
+					<div class="footer__socials footer__conteiner">
 						<div class="footer__title">
-							Информация:
+							Мы в соцсетях:
 						</div>
-						<ul>
-						<li><a href="">Каталог</a></li>
-						<li><a href="">Цены</a></li>
-						<li><a href="">Наши работы</a></li>
-						<li><a href="">Контакты</a></li>
-						<li><a href="">Отзывы</a></li>
-						</ul>
-					</div>
-				</div>	
-				<div class="footer__socials">
-					<div class="footer__conteiner">
-						<div class="footer__title">
-							Мы в соцсетях
-						</div>
-						<ul>
-						<li><a href="">
-							<img src="https://img.icons8.com/windows/32/000000/vk-com--v1.png" alt="VK">
-						</a></li>
-						<li><a href="https://www.instagram.com/teply_dom_evpatoria/?r=nametag">
-							<img src="https://img.icons8.com/windows/32/000000/instagram-new.png" alt="Instagram">
-						</a></li>
-						<li><a href="">
-							<img src="https://img.icons8.com/windows/32/000000/facebook.png" alt="Facebook">
-						</a></li>
-						</ul>
+							<ul>
+								<li><a href="https://vk.com/club109092092">
+									<img src="https://img.icons8.com/windows/32/000000/vk-com--v1.png" alt="VK">
+								</a></li>
+								<li><a href="https://www.instagram.com/teply_dom_evpatoria/?r=nametag">
+									<img src="https://img.icons8.com/windows/32/000000/instagram-new.png" alt="Instagram">
+								</a></li>
+							</ul>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="footer__about">
-			<div class="footer__conteiner">
-				<!--<div class="footer__title">
-					
-				</div>-->
-				<div class="footer__text">
-					2021г.
+				<div class="footer__policy">
+					<div class="footer__copyright">
+						<span>© 2021 <a href="/">«Теплый дом»</a></span>
+					</div>
+					<div>
+						<span>Материалы на сайте <a href="">не являются публичной офертой</a></span>
+					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
+
+	</div>
 </footer>
+	<div id="popup" class="popup">
+	<a href="#header" class="popup__area"></a>
+	<div class="popup__body">
+		<div class="popup__content">
+			<a href="#header" class="popup__close">X</a>
+			<div class="popup__title">Обратный вызов</div>
+			<div class="popup__text">
+				<div class="container">
+					<form class="forma" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe1onjCFJhUoUtpXSlAHCCgS_cqWpEbFmFN3zkvFn9i4qa49w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+						<p>Имя:</p>
+						<input type="text" name="entry.527690750" id="entry.527690750" placeholder="Введите ваше имя" class="name" required>
+						<p>Номер телефона: </p>
+						<input type="text" name="entry.843866252" id="entry.843866252" placeholder="+7()____-___-___" class="phone" required>
+						<div class="sended">Отправлено</div>
+						<input type="submit" value="Отправить" class="btn_submit">
+					</form>
+				</div>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="/assets/js/jqery.js"></script>
+	<script src="/assets/js/page.js"></script>
 </body>
 </html>

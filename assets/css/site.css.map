@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "site.css",
+	"sources": [
+		"site.scss",
+		"_sass/blocks/index.scss"
+	],
+	"sourcesContent": [
+		"@import \"blocks/index.scss\";",
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
