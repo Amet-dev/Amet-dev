@@ -92,7 +92,7 @@ header { background-color: white; z-index: 5; }
 
 footer { background: url("/assets/images/footer.jpg") center; }
 
-.footer__image { box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.2); margin-top: 10px; }
+.footer__image { box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.2); }
 
 .footer__wrapper { display: flex; flex-direction: column; }
 

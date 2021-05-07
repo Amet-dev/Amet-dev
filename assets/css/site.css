@@ -26,7 +26,7 @@
 
 .intro__text { font-size: 16px; color: #fff; font-weight: 300; font-size: 16px; line-height: 21px; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); }
 
-@media (max-width: 768px) { .intro__title { font-size: 30px; line-height: 40px; } .intro__item { width: 50%; } }
+@media (max-width: 768px) { .intro { padding: 20px 0 15px 0; } .intro__title { font-size: 30px; line-height: 40px; } .intro__item { width: 50%; } }
 
 @media (max-width: 420px) { .intro__item { width: 100%; } }
 
