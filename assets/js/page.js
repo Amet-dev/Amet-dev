@@ -1,7 +1,7 @@
 $(document).ready(function() {
 //шапка stick	
-let $window = $(window);
-let top_header = $('.header__body').offset().top;
+	let $window = $(window);
+	let top_header = $('.header__body').offset().top;
 
 	window.addEventListener('scroll', function() {
 		if ($window.scrollTop()>top_header){
@@ -18,4 +18,14 @@ let top_header = $('.header__body').offset().top;
      $('.header__burger,.header__menu').toggleClass('active');
   $('body').toggleClass('lock')
   });
+
+//кнопка
+		gform.addEventListener('submit', function(e) {
+			$('.sended').addClass('active');
+			gform.reset();
+			setTimeout(function(){
+			$('.sended').removeClass('active');
+			}, 4000);
+		});
+
 });

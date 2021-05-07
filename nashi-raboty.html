@@ -36,7 +36,7 @@
 						+7 (978) 716-00-61
 					</a>
 				</div>
-				<div class="header__item header__call" style="flex-grow: 1;align-self: flex-end;">
+				<div class="header__item header__call" >
 					<a href="#popup">
 						Заказать звонок
 					</a>
@@ -82,6 +82,11 @@
 						</a>
 					</li>
 					
+					<div class="header__item header__call">
+					<a href="#popup">
+						Заказать звонок
+					</a>
+					</div>
 				</ul>
 			</nav>	
 		</div>		
@@ -187,8 +192,9 @@
 							Контакты
 						</div>
 							<ul>
-								<li class="footer__kontakti_text">
-									г.Евпатория, ул. 9 мая, 47а, ТЦ "Максимум", 3 этаж, офис 20
+								<li class="footer__item">
+									<a href="https://yandex.ru/map-widget/v1/?um=constructor%3Aa9fc2df583d0096fecdf9d603e8b32da773cd01444fd1e65f1f74541f10b2e50&source=constructor">г.Евпатория, ул. 9 мая, 47а, ТЦ "Максимум", 3 этаж, офис 20</a>
+									
 								</li>
 								<li class="footer__item">
 								<a href="mailto:teplydom@mail.ru">
@@ -217,11 +223,11 @@
 					</div>
 				</div>
 				<div class="footer__policy">
-					<div class="footer__copyright">
-						<span>© 2021 <a href="/">«Теплый дом»</a></span>
+					<div class="footer__copyright footer__title">
+						<span>© 2021 <a href="/" style="color: #E2001A">«Теплый дом»</a></span>
 					</div>
 					<div>
-						<span>Материалы на сайте <a href="">не являются публичной офертой</a></span>
+						<span>Материалы на сайте <a style=" color: #000;" href="">не являются публичной офертой</a></span>
 					</div>
 				</div>
 			</div>			
@@ -229,24 +235,31 @@
 
 	</div>
 </footer>
+<div style="color: red; margin: 0 auto; width: 100%">
+	<span>сайт в разработке</span>
+</div>
 	<div id="popup" class="popup">
 	<a href="#header" class="popup__area"></a>
 	<div class="popup__body">
 		<div class="popup__content">
-			<a href="#header" class="popup__close">X</a>
-			<div class="popup__title">Обратный вызов</div>
-			<div class="popup__text">
-				<div class="container">
-					<form class="forma" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe1onjCFJhUoUtpXSlAHCCgS_cqWpEbFmFN3zkvFn9i4qa49w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-						<p>Имя:</p>
-						<input type="text" name="entry.527690750" id="entry.527690750" placeholder="Введите ваше имя" class="name" required>
-						<p>Номер телефона: </p>
-						<input type="text" name="entry.843866252" id="entry.843866252" placeholder="+7()____-___-___" class="phone" required>
-						<div class="sended">Отправлено</div>
-						<input type="submit" value="Отправить" class="btn_submit">
-					</form>
+			<div class="popup__title">
+				Оставьте заявку
+				<span>и мы свяжемся с Вами в удобное время</span>
+			</div>
+			<div class="popup__wrapper">
+				<a href="#header" class="popup__close"></a>
+				<div class="popup__text">
+						<form class="forma" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe1onjCFJhUoUtpXSlAHCCgS_cqWpEbFmFN3zkvFn9i4qa49w/formResponse?" target="hidden_iframe" onsubmit="submit=true;">
+							<p>Ваше имя:</p>
+							<input type="text" name="entry.527690750" id="entry.527690750" placeholder="Введите ваше имя" class="name" required>
+							<p>Номер телефона: </p>
+							<input type="text" name="entry.843866252" id="entry.843866252" placeholder="+7()____-___-___" class="phone" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+							<div class="sended">Отправлено</div>
+							<input type="submit" value="Отправить" class="btn_submit">
+						</form>
+					</div>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 				</div>
-				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 			</div>
 		</div>
 	</div>
