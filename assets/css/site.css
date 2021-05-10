@@ -28,6 +28,6 @@
 
 @media (max-width: 768px) { .intro { padding: 20px 0 15px 0; } .intro__title { font-size: 30px; line-height: 40px; } .intro__item { width: 50%; } }
 
-@media (max-width: 420px) { .intro__item { width: 100%; } }
+@media (max-width: 420px) { .intro__item { width: 100%; } .intro__title { font-size: 25px; line-height: 30px; } }
 
 /*# sourceMappingURL=site.css.map */
